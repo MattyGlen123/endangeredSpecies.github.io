@@ -9,8 +9,9 @@
   --color-secondary: #B2AFAC;
   --color-tertiary: #FFCE2B;
   --color-fourth: #959492;
-  --color-light: #faf9f9;
-  --color-dark: #111; }
+  --color-light: #fff;
+  --color-dark: #111;
+  --box-shadow: 0 1.5rem 4rem var(--color-dark); }
 
 *,
 *::after,
@@ -35,7 +36,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-dark));
+  background-image: linear-gradient(to right bottom, var(--color-light), var(--color-fourth));
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh; }
@@ -78,7 +79,7 @@ body {
   text-align: center !important; }
 
 .u-margin-top-lrg {
-  margin-bottom: 8rem !important; }
+  margin-top: 8rem !important; }
 
 .u-margin-bottom-sml {
   margin-bottom: 1.5rem !important; }
@@ -94,3 +95,26 @@ body {
   @media only screen and (max-width: 56.25em) {
     .u-margin-bottom-lrg {
       margin-bottom: 5rem; } }
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  background-color: var(--color-primary);
+  box-shadow: var(--box-shadow);
+  min-height: 50rem; }
+
+.header {
+  height: 7rem;
+  background-color: var(--color-light);
+  border-bottom: var(--color-secondary); }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background-color: var(--color-tertiary);
+  flex: 0 0 18%; }
+
+.animal-overview {
+  background-color: var(--color-primary);
+  flex: 1; }
