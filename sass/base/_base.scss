@@ -1,3 +1,12 @@
+:root { // Colours using css variables
+  --color-primary: #42413D; // carbon
+  --color-secondary: #B2AFAC; // ash
+  --color-tertiary: #FFCE2B; // dandlion
+  --color-fourth: #959492; // dust
+  --color-light: #faf9f9;
+  --color-dark: #111;
+}
+
 *,
 *::after,
 *::before {
@@ -7,12 +16,8 @@
 }
 
 html {
-  font-size: 92.5%; 
-  /*
-  100% = 16px
-  62.5% equivalent to 10px = 1rem 
-
-  */
+  box-sizing: border-box;
+  font-size: 62.5%;  // 100% = 16px so 62.5% equivalent to 10px = 1rem 
 
   @include respond(tab-land) { // width < 1200px
     font-size: 56.25%; // 1rem = 9px, 9/16 = 56.25%
@@ -29,4 +34,9 @@ html {
 
 body {
   box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
 }

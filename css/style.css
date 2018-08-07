@@ -4,6 +4,14 @@
   900px - 1200px   tablet landscape
   1200px - 1800px  desktop ++
 */
+:root {
+  --color-primary: #42413D;
+  --color-secondary: #B2AFAC;
+  --color-tertiary: #FFCE2B;
+  --color-fourth: #959492;
+  --color-light: #faf9f9;
+  --color-dark: #111; }
+
 *,
 *::after,
 *::before {
@@ -13,12 +21,8 @@
   /* makes border and padding included in width */ }
 
 html {
-  font-size: 92.5%;
-  /*
-  100% = 16px
-  62.5% equivalent to 10px = 1rem 
-
-  */ }
+  box-sizing: border-box;
+  font-size: 62.5%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -30,7 +34,11 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-image: linear-gradient(to right bottom, var(--color-primary), var(--color-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
 
 @keyframes moveInLeft {
   0% {
@@ -63,7 +71,8 @@ body {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  line-height: 1.7; }
+  line-height: 1.7;
+  color: var(--color-fourth); }
 
 .u-center-text {
   text-align: center !important; }
