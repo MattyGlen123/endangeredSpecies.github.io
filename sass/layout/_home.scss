@@ -4,13 +4,6 @@
   background-color: var(--color-primary);
   box-shadow: var(--box-shadow);
   min-height: 50rem;
-
-
-}
-.header {
-  height: 7rem;
-  background-color: var(--color-light);
-  border-bottom: var(--color-secondary)
 }
 
 .content {
@@ -18,7 +11,7 @@
 }
 
 .sidebar {
-  background-color: var(--color-tertiary);
+  background-color: var(--color-dark);
   flex: 0 0 18%;
 }
 

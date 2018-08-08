@@ -12,7 +12,39 @@
 <body>
   <div class="container u-margin-top-lrg u-margin-bottom-lrg">
     <header class="header">
-      header part
+      <div class="logo">
+        <svg class="logo__icon">
+          <use xlink:href="images/sprite.svg#icon-evernote"></use>
+        </svg>
+      </div>
+
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Search Species">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="images/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="images/sprite.svg#icon-bookmark"></use>
+          </svg>
+          <span class="user-nav__notification">7</span>
+        </div>
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+              <use xlink:href="images/sprite.svg#icon-chat"></use>
+            </svg>
+            <span class="user-nav__notification">11</span>
+        </div>
+        <div class="user-nav__user-box">
+            <img src="images/girl.jpeg" alt="user photo" class="user-nav__user-img">
+            <span class="user-nav__user-name">Freddy</span>
+        </div>
+      </nav>
     </header>
     <div class="content">
       <nav class="sidebar">

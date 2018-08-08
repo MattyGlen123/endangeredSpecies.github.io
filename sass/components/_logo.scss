@@ -1,0 +1,17 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: .7rem;
+  margin-left: 2rem;
+  border: 5px solid var(--color-tertiary);
+  border-radius: 50%;
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-tertiary);
+    animation: logoRotate 2s ease-in-out;
+  }
+}
