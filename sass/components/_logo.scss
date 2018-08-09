@@ -8,10 +8,13 @@
   border: 5px solid var(--color-tertiary);
   border-radius: 50%;
 
+  &:hover {
+    animation: logoRotate 2s ease-in-out;
+  }
+
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
     fill: var(--color-tertiary);
-    animation: logoRotate 2s ease-in-out;
   }
 }
