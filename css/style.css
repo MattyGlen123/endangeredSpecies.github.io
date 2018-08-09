@@ -90,8 +90,20 @@ body {
 .u-center-text {
   text-align: center !important; }
 
+.u-margin-top-sml {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-med {
+  margin-top: 4rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-med {
+      margin-top: 3rem; } }
+
 .u-margin-top-lrg {
   margin-top: 8rem !important; }
+  @media only screen and (max-width: 56.25em) {
+    .u-margin-top-lrg {
+      margin-top: 5rem; } }
 
 .u-margin-bottom-sml {
   margin-bottom: 1.5rem !important; }
