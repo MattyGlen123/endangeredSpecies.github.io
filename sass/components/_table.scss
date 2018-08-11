@@ -1,0 +1,18 @@
+.table {
+  width: 100%;
+  text-transform: uppercase;
+
+  &__row {
+
+  }
+
+  &__title {
+    padding: .5rem 1rem;
+    color: var(--color-tertiary);
+  }
+
+  &__item {
+    color: var(--color-light);
+    padding: .5rem 1rem;
+  }
+}

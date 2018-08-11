@@ -1,0 +1,32 @@
+.intro {
+  flex: 0 0 60%;
+
+  font-size: 1.4rem;
+  box-shadow: var(--box-shadow);
+  margin-right: 4.5rem;
+  padding: 3rem;
+  border-radius: 3px;
+
+  &__title {
+    color: var(--color-tertiary);
+  }
+
+  &__title-box {
+    position: relative;
+    display: inline-block;
+    margin-right: auto;
+  }
+
+  &__title::before { // Creates a line under the heading
+    @include titleAnimation;
+    background-color: var(--color-tertiary);
+  }
+
+  &:hover &__title::before { // When overview is hovered, trigger titleAnimation
+    transform: scaleX(1);
+  }
+
+  &__text {
+    color: var(--color-seondary);
+  }
+}

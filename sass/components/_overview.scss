@@ -19,20 +19,11 @@
   }
 
   &__heading::before { // Creates a line under the heading
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    
-    height: 3px;
-    width: 100%;
+    @include titleAnimation;
     background-color: var(--color-secondary);
-    transform-origin: bottom;
-    transform: scaleX(0);
-    transition: transform 1s ease-in-out;
   }
 
-  &__heading:hover::before {
+  &:hover &__heading::before { // When overview is hovered, trigger titleAnimation
     transform: scaleX(1);
   }
 
