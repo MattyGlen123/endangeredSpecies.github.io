@@ -12,7 +12,7 @@
   font-size: 1.4rem;
   height: 8rem;
   background-color: var(--color-primary);
-  border-bottom: 1px solid var(--color-light);
+  border-bottom: var(--line);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .sidebar { // contains side-nav + legal
-  color: var(--color-primary);
+  color: var(--color-fourth);
   background-color: var(--color-dark);
   flex: 0 0 18%;
   display: flex;
@@ -32,10 +32,19 @@
 }
 
 .animal-overview {
-  //test remove later
-  height: 80rem;
   background-color: var(--color-primary);
   
   flex: 1;
-  
+}
+
+.animal-content {
+  display: flex;
+  padding: 4.5rem;
+  border-bottom: var(--line);
+}
+
+.discription { 
+  box-shadow: var(--box-shadow);
+  flex: 1;
+  border-radius: 3px;
 }
