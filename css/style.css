@@ -148,6 +148,26 @@ body {
   .btn__inline:focus {
     outline: none; }
 
+.btn__text:link, .btn__text:visited {
+  font-size: 1.2rem;
+  color: var(--color-light);
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-light);
+  padding: 3px 5px;
+  transition: all .2s;
+  border-radius: 5px; }
+
+.btn__text:hover {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  box-shadow: var(--line);
+  transform: translateY(-2px); }
+
+.btn__text:active {
+  box-shadow: var(--line);
+  transform: translateY(0); }
+
 .gallery {
   display: flex; }
   .gallery__photo {
@@ -155,9 +175,9 @@ body {
     width: 100%; }
 
 .intro {
+  flex: 0 0 60%;
   font-size: 1.4rem;
   box-shadow: var(--box-shadow);
-  flex: 0 0 60%;
   margin-right: 4.5rem;
   padding: 3rem;
   border-radius: 3px; }
@@ -326,13 +346,16 @@ body {
 
 .table {
   width: 100%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  padding: 3rem 0; }
   .table__title {
-    padding: .5rem 1rem;
-    color: var(--color-tertiary); }
+    color: var(--color-tertiary);
+    padding: 1rem; }
   .table__item {
     color: var(--color-light);
-    padding: .5rem 1rem; }
+    padding: .5rem; }
 
 .user-nav {
   display: flex;

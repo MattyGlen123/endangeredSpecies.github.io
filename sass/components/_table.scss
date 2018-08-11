@@ -1,18 +1,21 @@
 .table {
   width: 100%;
   text-transform: uppercase;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  padding: 3rem 0;
 
   &__row {
 
   }
 
   &__title {
-    padding: .5rem 1rem;
     color: var(--color-tertiary);
+    padding: 1rem;
   }
 
   &__item {
     color: var(--color-light);
-    padding: .5rem 1rem;
+    padding: .5rem;
   }
 }
