@@ -1,0 +1,24 @@
+.other-species {
+  font-size: 1.4rem;
+  box-shadow: var(--box-shadow);
+  padding: 3rem;
+  border-radius: 3px;
+  display: flex;
+  // flex-direction: column;
+  min-height: 40rem;
+}
+
+.pic-1 {
+  background-color: yellow;
+  flex: 0 0 100%;
+}
+
+.pic-2 {
+  background-color: red;
+  flex: 0 0 50%;
+}
+
+.pic-3 {
+  background-color: blue;
+  flex: 0 0 50%;
+}
