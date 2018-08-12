@@ -1,0 +1,23 @@
+.description {
+  box-shadow: var(--box-shadow);
+  flex: 1;
+  border-radius: 3px;
+
+  &__box {
+    width: 100%;
+    min-height: 50rem;
+    background-color: red;
+
+    &__picture {
+    background-size: cover;
+    height: 25rem;
+    background-blend-mode: color-burn;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+      &--1 {
+        background-image: linear-gradient( to right top, lighten($color-tertiary, 40%), $color-fourth),url(../images/rhino-sml.jpg);
+      }
+    }
+  }
+}
