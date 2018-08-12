@@ -1,23 +1,58 @@
 .description {
-  box-shadow: var(--box-shadow);
   flex: 1;
-  border-radius: 3px;
 
   &__box {
     width: 100%;
-    min-height: 50rem;
-    background-color: red;
+    min-height: 35rem;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--box-shadow);
+    padding-bottom: 3rem;
+  }
 
-    &__picture {
+  &__picture {
     background-size: cover;
-    height: 25rem;
+    height: 20rem;
     background-blend-mode: color-burn;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
-      &--1 {
-        background-image: linear-gradient( to right top, lighten($color-tertiary, 40%), $color-fourth),url(../images/rhino-sml.jpg);
-      }
+    &--1 {
+      background-image: linear-gradient( to right top, var(--color-tertiary), var(--color-light)), url(../images/rhino-sml.jpg);
     }
+
+    &--2 {
+      background-image: linear-gradient( to right top, var(--color-tertiary), var(--color-light)), url(../images/gorilla-sml.jpeg);
+    }
+
+    &--3 {
+      background-image: linear-gradient( to right top, var(--color-tertiary), var(--color-light)), url(../images/lemur-sml.jpeg);
+    }
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--color-light);
+    position: absolute;
+    width: 50%;
+
+    &--right {
+      top: 5rem;
+      right: 2rem;
+      text-align: right;
+    }
+
+    &--left {
+      top: 8rem;
+      left: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    padding: 1rem;
   }
 }
