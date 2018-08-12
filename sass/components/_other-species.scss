@@ -1,24 +1,32 @@
 .other-species {
   font-size: 1.4rem;
   box-shadow: var(--box-shadow);
-  padding: 3rem;
   border-radius: 3px;
-  display: flex;
-  // flex-direction: column;
-  min-height: 40rem;
-}
+  height: 60rem;
+  position: relative;
+  overflow: hidden;
 
-.pic-1 {
-  background-color: yellow;
-  flex: 0 0 100%;
-}
+  &__picture {
+    height: 100%;
+    transition: all 20s;
+    background-image: linear-gradient(to right, rgba(0,0,0,.8), rgba(0,0,0,.5)),
+                      url(../images/tiger-lrg.jpeg);
+    background-size: cover;
 
-.pic-2 {
-  background-color: red;
-  flex: 0 0 50%;
-}
+    &:hover {
+      transform: scale(1.1); 
+    }
+  }
 
-.pic-3 {
-  background-color: blue;
-  flex: 0 0 50%;
+  &__title {
+    position: absolute;
+    width: 60%;
+    left: 3rem;
+    top: 3rem;
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: var(--color-light);
+    letter-spacing: 5px;
+  }
 }
