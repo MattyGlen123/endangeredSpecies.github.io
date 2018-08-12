@@ -30,6 +30,7 @@
     padding: 3px 5px;
     transition: all .2s;
     border-radius: 5px;
+    margin-left: 1.5rem;
   }
 
   &:hover {
@@ -43,4 +44,45 @@
     box-shadow: var(--line);
     transform: translateY(0);
   }
+}
+
+.btn {
+  cursor: pointer;
+  position: relative;
+  font-size: 1.5rem;
+  color: var(--color-light);
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 100px;
+  box-shadow: var(--box-shadow);
+  background-image: linear-gradient(to right top, var(--color-btn-primary), var(--color-btn-secondary));
+  overflow: hidden;
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all .2s;
+  }
+
+  &__visible {
+    padding: 2rem 7rem;
+  }
+
+  &__invisible {
+    position: absolute;
+    left: 0;
+    top: -100%; // makes element sit directly above visible sibling
+    padding: 2rem 0;
+  }
+
+  &:hover &__visible {
+    transform: translateY(100%);
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+  
 }
