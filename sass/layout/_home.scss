@@ -1,11 +1,14 @@
 .container {  // contains header + content
   max-width: 120rem;
-  margin: 0 auto;
+  margin: 8rem auto;
   background-color: var(--color-primary);
   box-shadow: var(--box-shadow);
-  min-height: 50rem;
   border-radius: 3px;
   overflow: hidden;
+
+  @include respond(tab-land) {
+    margin: 0;
+  }
 }
 
 .header { // contains logo + search + user-nav
@@ -20,6 +23,10 @@
 
 .content { // contains sidebar + animal-overview
   display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .sidebar { // contains side-nav + legal
@@ -40,9 +47,17 @@
   display: flex;
   padding: 4.5rem;
   border-bottom: var(--line);
+
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
 }
 
 .animal-primary {
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @include respond(tab-port) {
+    margin-right: 2rem;
+  }
 }
