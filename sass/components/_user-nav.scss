@@ -42,6 +42,11 @@
     align-items: center;
 
   }
+
+  &__user-box {
+    position: relative;
+  }
+
   &__user-img {
     width: 3.75rem;
     height: 3.75rem;
@@ -51,5 +56,47 @@
 
   &__user-name {
     color: var(--color-tertiary);
+  }
+
+  &__drop-list { // Drop down menu appears for user options
+    width: 100%;
+    position: absolute;
+    bottom: -220%;
+    left: 0;
+
+    list-style: none;
+    background-color: var(--color-primary);
+    z-index: 100;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s,
+                visibility .3s;
+
+  @include respond(phone-sml) {
+    bottom: -358%;
+  }
+  }
+
+  &__user-box:hover &__drop-list {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__drop-item {
+    display: flex;
+    padding: 1rem 2rem;
+    transition: all .2s;
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-light);
+    }
+  }
+
+  &__drop-icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: var(--color-light);
+    margin-right: 1rem;
   }
 }
