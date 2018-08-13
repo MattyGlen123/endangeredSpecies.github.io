@@ -5,6 +5,12 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(phone-sml) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-fourth);
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;

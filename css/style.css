@@ -232,6 +232,9 @@ body {
       background-image: linear-gradient(to right top, var(--color-tertiary), var(--color-light)), url(../images/gorilla-sml.jpeg); }
     .description__picture--3 {
       background-image: linear-gradient(to right top, var(--color-tertiary), var(--color-light)), url(../images/lemur-sml.jpeg); }
+    @media only screen and (max-width: 40.5em) {
+      .description__picture {
+        height: 40rem; } }
   .description__title {
     font-size: 2.8rem;
     font-weight: 300;
@@ -340,12 +343,18 @@ body {
   .overview__heading-box {
     margin-right: auto;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 40.5em) {
+      .overview__heading-box {
+        padding: 1.5rem 1rem; } }
   .overview__heading {
     font-size: 2.5rem;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative; }
+    @media only screen and (max-width: 40.5em) {
+      .overview__heading {
+        font-size: 1.8rem; } }
   .overview__heading::before {
     content: "";
     position: absolute;
@@ -363,6 +372,9 @@ body {
     font-size: 1.2rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 40.5em) {
+      .overview__sponser {
+        font-size: 1rem; } }
   .overview__price {
     background-color: var(--color-tertiary);
     margin-left: 3rem;
@@ -373,6 +385,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column; }
+    @media only screen and (max-width: 40.5em) {
+      .overview__price {
+        margin-left: 1rem; } }
   .overview__price-average {
     font-size: 2.25rem;
     font-weight: 300;
@@ -386,6 +401,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--color-fourth); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -457,14 +477,23 @@ body {
     padding: 1.5rem 3rem;
     display: flex;
     align-items: center; }
+    @media only screen and (max-width: 40.5em) {
+      .side-nav__link:link, .side-nav__link:visited {
+        flex-direction: column;
+        padding: 1rem 0;
+        font-size: 1.1rem; } }
     @media only screen and (max-width: 56.25em) {
       .side-nav__link:link, .side-nav__link:visited {
-        justify-content: center; } }
+        justify-content: center;
+        padding: 1.5rem 2.5rem; } }
   .side-nav__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; }
+    @media only screen and (max-width: 40.5em) {
+      .side-nav__icon {
+        margin-right: 0; } }
 
 .table {
   width: 100%;
@@ -538,6 +567,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 11rem; } }
 
 .content {
   display: flex; }
@@ -564,6 +598,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .animal-content {
       padding: 2rem; } }
+  @media only screen and (max-width: 40.5em) {
+    .animal-content {
+      flex-direction: column; } }
 
 .animal-primary {
   flex: 0 0 60%;
@@ -571,3 +608,7 @@ body {
   @media only screen and (max-width: 56.25em) {
     .animal-primary {
       margin-right: 2rem; } }
+  @media only screen and (max-width: 40.5em) {
+    .animal-primary {
+      margin-right: 0;
+      margin-bottom: 3rem; } }

@@ -29,8 +29,11 @@
 */
 
 @mixin respond($breakpoint) {
+  @if $breakpoint == phone-sml {
+    @media only screen and ( max-width: 31.25em) { @content }; // 650px
+  }
   @if $breakpoint == phone {
-    @media only screen and ( max-width: 37.5em) { @content }; // 600px
+    @media only screen and ( max-width: 40.5em) { @content }; // 650px
   }
   @if $breakpoint == tab-port {
     @media only screen and ( max-width: 56.25em) { @content }; // 900px

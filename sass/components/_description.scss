@@ -28,6 +28,10 @@
     &--3 {
       background-image: linear-gradient( to right top, var(--color-tertiary), var(--color-light)), url(../images/lemur-sml.jpeg);
     }
+
+    @include respond(phone) {
+      height: 40rem;
+    }
   }
 
   &__title {

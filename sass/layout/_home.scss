@@ -19,6 +19,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include respond(phone-sml) {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 11rem;
+  }
 }
 
 .content { // contains sidebar + animal-overview
@@ -51,6 +57,10 @@
   @include respond(tab-port) {
     padding: 2rem;
   }
+
+  @include respond(phone) {
+    flex-direction: column;
+  }
 }
 
 .animal-primary {
@@ -59,5 +69,10 @@
 
   @include respond(tab-port) {
     margin-right: 2rem;
+  }
+
+  @include respond(phone) {
+    margin-right: 0;
+    margin-bottom: 3rem; 
   }
 }

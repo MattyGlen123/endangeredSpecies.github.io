@@ -58,8 +58,15 @@
     display: flex;
     align-items: center;
 
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 1rem 0;
+      font-size: 1.1rem;
+    }
+
     @include respond(tab-port) {
       justify-content: center;
+      padding: 1.5rem 2.5rem;
     }
   }
 
@@ -68,5 +75,9 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor; // inherits the parents color properties even on hover
+
+    @include respond(phone) {
+      margin-right: 0;
+    }
   }
 }
