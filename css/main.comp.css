@@ -210,6 +210,70 @@ body {
   .btn:hover .btn__invisible {
     top: 0; }
 
+.chat-box {
+  font-size: 1.3rem;
+  width: 550%;
+  position: absolute;
+  top: 100%;
+  right: -50%;
+  background-color: var(--color-primary);
+  border-radius: 3px;
+  border: 1px solid var(--color-secondary);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden; }
+  @media only screen and (max-width: 31.25em) {
+    .chat-box {
+      top: 110%;
+      right: -210%;
+      width: 100vw; } }
+  .chat-box::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 15%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--color-primary); }
+    @media only screen and (max-width: 31.25em) {
+      .chat-box::before {
+        display: none; } }
+  .chat-box__options {
+    display: flex;
+    border-bottom: var(--line); }
+  .chat-box__item {
+    padding: 1rem 1rem;
+    transition: all .2s; }
+    .chat-box__item:last-child {
+      margin-left: auto;
+      color: var(--color-tertiary); }
+  .chat-box__item:hover {
+    color: var(--color-light);
+    background-color: var(--color-secondary); }
+  .chat-box__coversations {
+    background-color: var(--color-secondary);
+    padding-bottom: 5rem; }
+  .chat-box__chat {
+    display: flex;
+    padding: 1rem 2rem;
+    color: var(--color-primary);
+    transition: all .2s; }
+  .chat-box__chat:hover {
+    background-color: var(--color-fourth); }
+  .chat-box__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%; }
+  .chat-box__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .chat-box__name {
+    padding: .2rem 1rem; }
+  .chat-box__last-message {
+    padding: .2rem 1rem;
+    font-size: 1.1rem; }
+
 .cta {
   color: var(--color-light);
   padding: 3.5rem 0;
@@ -531,6 +595,9 @@ body {
     background-color: var(--color-secondary); }
   .user-nav__icon-box {
     position: relative; }
+  .user-nav__icon-box--chat:hover .chat-box {
+    opacity: 1;
+    visibility: visible; }
   .user-nav__icon {
     height: 2.25rem;
     width: 2.25rem;
