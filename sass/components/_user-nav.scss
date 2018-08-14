@@ -19,6 +19,11 @@
     position: relative;
   }
 
+  &__icon-box--chat:hover .chat-box {
+    opacity: 1;
+    visibility: visible;
+  }
+
   &__icon {
     height: 2.25rem;
     width: 2.25rem;
