@@ -4,7 +4,7 @@
 A Project that started out as a flex box tutorial, I then redesigned and expanded the content.
 
 ## Motivation
-I started this project to improve my flexbox skills, once the course had finished I kept working on the new features. Adding hover animation to the navigations and titles to expand my knowledge. Also changing the main content to include images that were filtered to fit the color scheme.
+I started this project to improve my Flexbox skills, once the course had finished I kept working on the new features. Adding hover animation to the navigations and titles to expand my knowledge. Also changing the main content to include images that were filtered to fit the colour scheme.
 
 ## For developers
 Install project dependencies:
